@@ -90,8 +90,8 @@ def main():
     HP=260  #horsepower car 1
     MASS=1410 #kg mass car 1
 
-    HP=160  #horsepower car 2
-    MASS=1310 #kg mass car 2
+    HP2=160  #horsepower car 2
+    MASS2=1310 #kg mass car 2
 
     LONG_AWD=1.1 # Roughly peak clutch dump longitudinal G AWD can support
     LONG_2WD=0.6
@@ -100,7 +100,7 @@ def main():
     print("Car#1")
     times, positions, velocities, long_acc,t60,t200 = simulate_dragstrip_launch(car, total_time=7, time_step=.001)
 
-    car2 = Car(mass=MASS, horsepower=HP, max_longitudinal_acceleration_fraction=LONG_AWD)
+    car2 = Car(mass=MASS2, horsepower=HP2, max_longitudinal_acceleration_fraction=LONG_AWD)
     print("Car#2")
     times2, positions2, velocities2, long_acc2,t60_2,t200_2 = simulate_dragstrip_launch(car2, total_time=7, time_step=.001)
 
